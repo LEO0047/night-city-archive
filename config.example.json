@@ -1,0 +1,14 @@
+{
+  "name": "NIGHT CITY // ARCHIVE",
+  "game_root": "C:/Games/Cyberpunk 2077",
+  "game_product_version": "UNKNOWN",
+  "game_file_version": "UNKNOWN",
+  "gog_version": "UNKNOWN",
+  "gog_build": "UNKNOWN",
+  "wolvenkit_version": "9.1.0",
+  "storage_limit_bytes": 20000000000,
+  "storage_approved": false,
+  "bind_host": "127.0.0.1",
+  "port": 18779,
+  "pwsh_path": ""
+}

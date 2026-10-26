@@ -1,0 +1,25 @@
+# Local installations and generated game data are never part of this source release.
+config.json
+data/
+exports/
+reports/
+tools/
+release/
+__pycache__/
+**/__pycache__/
+*.pyc
+*.db
+*.db-wal
+*.db-shm
+*.sqlite*
+*.archive
+*.wem
+*.mesh
+*.xbm
+*.glb
+*.wav
+*.zip
+*.log
+.env*
+.DS_Store
+Thumbs.db

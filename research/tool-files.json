@@ -1,0 +1,57 @@
+[
+  {
+    "path": "tools/vgmstream-win64-r2168.zip",
+    "bytes": 4574355,
+    "sha256": "692d45070852a35c1fa42726aa3c9de528e44eec925d37d99b1074256b99a229"
+  },
+  {
+    "path": "tools/WolvenKit.Console-9.1.0.zip",
+    "bytes": 45266516,
+    "sha256": "7caf49cdf0f478b484b1a5a27e5aef261b879fabea7e72e33ca60eff3b834f4f"
+  },
+  {
+    "path": "tools/NCA.Bridge.dll",
+    "bytes": 21504,
+    "sha256": "ffb33c5a430200355e5b650a96bc8f661e0f6c579ff01ee594f3a6e4ccb44f73"
+  },
+  {
+    "path": "tools/wolvenkit-9.1.0/appsettings.json",
+    "bytes": 328,
+    "sha256": "1b43ae3e52dd3d625538093216f459b2219452677f5f2866e5d1dda7f41e2774"
+  },
+  {
+    "path": "scripts/ink_paths.py",
+    "bytes": 1016,
+    "sha256": "330bb08934684b480eef828df0ab71a5433523ea992fe91b9746f49499fcf205"
+  },
+  {
+    "path": "web/vendor/BufferGeometryUtils.js",
+    "bytes": 35539,
+    "sha256": "fda7e946b8e0b5ab39b779206589e7a1079a22eb24efb89d7223e03fdfb1f751"
+  },
+  {
+    "path": "web/vendor/GLTFLoader.js",
+    "bytes": 114734,
+    "sha256": "0c9392293f77e9fa2be286230d804cb4415a9fbbabcd32c980b476592da5125f"
+  },
+  {
+    "path": "web/vendor/OrbitControls.js",
+    "bytes": 38703,
+    "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c"
+  },
+  {
+    "path": "web/vendor/three-LICENSE.txt",
+    "bytes": 1081,
+    "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+  },
+  {
+    "path": "web/vendor/three.core.js",
+    "bytes": 1403455,
+    "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+  },
+  {
+    "path": "web/vendor/three.module.js",
+    "bytes": 603113,
+    "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+  }
+]

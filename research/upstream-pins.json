@@ -1,0 +1,27 @@
+[
+  {
+    "repository": "WolvenKit/WolvenKit",
+    "ref": "9.1.0",
+    "commit": "4d1716b1755dcadead2815b3ec356fa61f30861c"
+  },
+  {
+    "repository": "spuddeh/cp2077-ink-archive",
+    "ref": "main",
+    "commit": "2358b8d2d938d7b97613d26d488b3d99ed6057ac"
+  },
+  {
+    "repository": "WolvenKit/Cyberpunk-Blender-add-on",
+    "ref": "main",
+    "commit": "7a4ee793c36d9615946fe87ec9d42cde7568021d"
+  },
+  {
+    "repository": "mrdoob/three.js",
+    "ref": "r180",
+    "commit": "0af9729d0c143a86a1d725d6e2c3ad83301f3f34"
+  },
+  {
+    "repository": "vgmstream/vgmstream",
+    "ref": "r2168",
+    "commit": "d9875b1fff307e4759dfb85e49e3d5e6fb196f7c"
+  }
+]

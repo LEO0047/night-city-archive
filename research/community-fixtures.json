@@ -1,0 +1,13 @@
+{
+  "scope_note": "Three resource targets in two independently documented content families. This is a detection regression, not proof that three separate quests are cut. Fixtures are consumed only by acceptance, never by discover.py.",
+  "positive": [
+    {"name":"MQ009 / Ken Lee scene family","family":"mq009","hashes":["12894907652176725168","9952997154503146794","13527091896786277961"],"expected_finding":"NCA-59EB3E275366","source":"https://www.reddit.com/r/LowSodiumCyberpunk/comments/lsc5p1/"},
+    {"name":"Unresolved unreferenced ink animation","family":"unresolved-ink","hashes":["840968453105948297"],"expected_finding":"NCA-8616011BE6ED","source":"https://github.com/spuddeh/cp2077-ink-archive"},
+    {"name":"Unresolved unreferenced ink widget","family":"unresolved-ink","hashes":["10823073814826382310"],"expected_finding":"NCA-8616011BE6ED","source":"https://github.com/spuddeh/cp2077-ink-archive"}
+  ],
+  "negative": [
+    {"name":"Q000 Nomad main quest","hash":"189913991119197407"},
+    {"name":"MQ008 shooting contest","hash":"12498262773771544578"},
+    {"name":"EP1 MQ301 main phase","hash":"7968929934736832945"}
+  ]
+}

@@ -1,0 +1,11 @@
+[
+  {"title":"WolvenKit 9.1.0 / 官方工具與原始碼","url":"https://github.com/WolvenKit/WolvenKit/releases/tag/9.1.0","use":"使用 ArchiveReader、CR2WReader、HashService、JSON serializer 與 CLI 媒體匯出。薄型橋接器以 GPL-3.0-or-later 提供原始碼。","license":"GPL-3.0；授權全文 research/WolvenKit-LICENSE.txt"},
+  {"title":"WolvenKit CLI / REDmodding Wiki","url":"https://wiki.redmodding.org/wolvenkit/wolvenkit-cli/usage/command-list","use":"參考唯讀封存檔列舉、解包、JSON 與模型／貼圖匯出的官方操作方式。","status":"已閱讀，文件與實際 9.1.0 --help 交叉驗證。"},
+  {"title":"spuddeh / cp2077-ink-archive","url":"https://github.com/spuddeh/cp2077-ink-archive","use":"重用 build.py 的 DepotPath 引用遍歷函式；採用檔案／跨檔引用／全文搜尋的資料設計。使用其無名 UI 研究作獨立回歸樣本。未將其 2.31 遊戲資料冒充為本機 2.5 掃描。","license":"程式、網站與 schema 為 MIT；研究資料屬 CD PROJEKT RED。授權全文 research/ink-archive-LICENSE.txt"},
+  {"title":"WolvenKit / Cyberpunk Blender add-on","url":"https://github.com/WolvenKit/Cyberpunk-Blender-add-on","use":"已調查，後續完整 REDengine 材質、實體組裝與動畫重建的優先路線。目前採 WolvenKit GLB 幾何匯出，未安裝 Blender 或把簡化材質宣稱成遊戲原貌。","license":"未複製或執行 add-on；擴充前固定版本並核對該版本授權。"},
+  {"title":"The Cutting Room Floor / Cyberpunk 2077","url":"https://tcrf.net/Cyberpunk_2077","use":"已嘗試查閱，但網站回應 403。未採用無法讀取的內容作證據。","status":"存取受阻；列入後續研究來源，尚未完成比對。"},
+  {"title":"libSpace / Untranslated quests and other scraped content (2021)","url":"https://www.reddit.com/r/LowSodiumCyberpunk/comments/lsc5p1/","use":"第一手社群研究指出 MQ009／Ken Lee、早期場景註記及 Q116 的未翻譯段落。僅作歷史線索；本機 2.5 的英文 MQ009 已翻譯，明確記錄差異。","status":"來源作者自行提醒角色推定、翻譯與敘述的不確定性。"},
+  {"title":"cqb02rmse8ri / A visualization of deleted quests (2021)","url":"https://www.reddit.com/r/cyberpunkgame/comments/lmk5hr/","use":"參考任務代號與內容群的組織方式，以及作者對編號、改名和重新編寫的不確定性提醒。未以編號缺口作刪減證明。","status":"歷史研究；不能直接套用當前版本。"},
+  {"title":"Three.js 0.180.0","url":"https://github.com/mrdoob/three.js/tree/r180","use":"本機 GLB 檢視器、OrbitControls、GLTFLoader；所有模組均下載至 web/vendor，執行時不使用 CDN。","license":"MIT；web/vendor/three-LICENSE.txt。GLTFLoader 的 utility import 改為本機相對路徑。"},
+  {"title":"vgmstream r2168","url":"https://github.com/vgmstream/vgmstream/releases/tag/r2168","use":"在本機把 Wwise 語音解碼為 WAV，保留轉換工具與來源 hash。","license":"工具與 bundled libraries 的授權保留於 tools/vgmstream-r2168/COPYING。"}
+]

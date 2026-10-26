@@ -1,0 +1,18 @@
+[
+  {
+    "name": "WolvenKit CLI 9.1.0",
+    "url": "https://github.com/WolvenKit/WolvenKit/releases/download/9.1.0/WolvenKit.Console-9.1.0.zip",
+    "file": "WolvenKit.Console-9.1.0.zip",
+    "directory": "wolvenkit-9.1.0",
+    "bytes": 45266516,
+    "sha256": "7caf49cdf0f478b484b1a5a27e5aef261b879fabea7e72e33ca60eff3b834f4f"
+  },
+  {
+    "name": "vgmstream r2168",
+    "url": "https://github.com/vgmstream/vgmstream/releases/download/r2168/vgmstream-win64.zip",
+    "file": "vgmstream-win64-r2168.zip",
+    "directory": "vgmstream-r2168",
+    "bytes": 4574355,
+    "sha256": "692d45070852a35c1fa42726aa3c9de528e44eec925d37d99b1074256b99a229"
+  }
+]
