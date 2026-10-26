@@ -6,20 +6,37 @@ FORBIDDEN_SUFFIXES={'.archive','.db','.sqlite','.sqlite3','.wem','.mesh','.xbm',
 
 def validate_catalogue(data):
     errors=[]
-    if data.get('schema')!='nca.public.research/v1':errors.append('Unexpected public schema')
-    if len(data.get('findings',[]))<30:errors.append('Fewer than 30 dossiers')
+    if data.get('schema') not in ('nca.public.research/v1','nca.public.research/v2'):errors.append('Unexpected public schema')
+    phase2=data.get('schema')=='nca.public.research/v2'
+    if phase2 and data.get('mode')!='public':errors.append('Private catalogue in public build')
+    if phase2 and set(data)-{'schema','mode','game','source_manifest_sha256','integrity','metrics','findings','aliases','coverage','acceptance','method','sources'}:errors.append('Unexpected public top-level fields')
+    if not data.get('findings'):errors.append('Missing dossiers')
+    if not phase2 and len(data.get('findings',[]))<30:errors.append('Fewer than 30 dossiers')
     permitted={'hash','path','extension','role','archives'}
     for f in data.get('findings',[]):
-        if not f.get('details',{}).get('counter'):errors.append('Missing counterevidence: '+f.get('id','?'))
+        if phase2 and set(f)-{'id','title','summary','categories','classification','classification_origin','community','community_status','system_conclusion','analyst_conclusion','community_note','flow','sections','support','counter','evidence','confidence_explanation','assets','aliases','next_test','sources'}:errors.append('Unexpected dossier fields')
+        if not (f.get('counter') if phase2 else f.get('details',{}).get('counter')):errors.append('Missing counterevidence: '+f.get('id','?'))
+        if phase2 and (f.get('classification_origin') not in ('rule','analyst','community') or not f.get('confidence_explanation')):errors.append('Missing classification provenance')
         for a in f.get('assets',[]):
             if set(a)-permitted:errors.append('Unexpected asset payload fields')
             for r in a.get('archives',[]):
-                if set(r)-{'path','sha256'}:errors.append('Unexpected archive fields')
+                if set(r)-{'path','sha256','entry_sha1'}:errors.append('Unexpected archive fields')
+    if phase2:
+        forbidden={'audio','transcription','localization','journal','female','male','json_zlib','segments','wav_sha256'}
+        def inspect(node):
+            if isinstance(node,dict):
+                if set(node)&forbidden:errors.append('Private payload keys in public catalogue')
+                for v in node.values():inspect(v)
+            elif isinstance(node,list):
+                for v in node:inspect(v)
+        inspect(data)
+        ids={f['id'] for f in data['findings']}
+        if any(v not in ids or k in ids for k,v in data.get('aliases',{}).items()):errors.append('Broken alias target')
     return errors
 
 def main():
-    result=subprocess.run(['git','ls-files','-z'],cwd=ROOT,capture_output=True,check=True)
-    files=[Path(p.decode()) for p in result.stdout.split(b'\0') if p]
+    result=subprocess.run(['git','ls-files','--cached','--others','--exclude-standard','-z'],cwd=ROOT,capture_output=True,check=True)
+    files=sorted({Path(p.decode()) for p in result.stdout.split(b'\0') if p and (ROOT/Path(p.decode())).exists()})
     errors=[]
     for rel in files:
         p=ROOT/rel

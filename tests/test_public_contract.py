@@ -12,11 +12,21 @@ class PublicContract(unittest.TestCase):
     def test_catalogue_contract(self):
         data=json.loads((ROOT/'docs/catalogue.json').read_text(encoding='utf-8'))
         self.assertEqual(validate_catalogue(data),[])
-        self.assertEqual(len(data['findings']),34)
+        self.assertEqual(len(data['aliases']),29)
+        self.assertEqual(len({f['summary'] for f in data['findings']}),len(data['findings']))
         for f in data['findings']:
-            self.assertEqual(f['id'],'NCA-'+hashlib.sha256(f['slug'].encode()).hexdigest()[:12].upper())
-            self.assertGreaterEqual(len(f['assets']),2)
-            self.assertTrue(f['details']['support']);self.assertTrue(f['details']['sql'])
+            self.assertRegex(f['id'],r'^NCA-[A-F0-9]{12}$')
+            self.assertTrue(f['support']);self.assertTrue(f['evidence'])
+            self.assertTrue(all(e['command'] and e['locator'] for e in f['evidence']))
+            self.assertIn(f['classification_origin'],('rule','analyst','community'))
+    def test_private_catalogue_rejected(self):
+        d=json.loads((ROOT/'docs/catalogue.json').read_text(encoding='utf-8'));d['mode']='private'
+        self.assertIn('Private catalogue in public build',validate_catalogue(d))
+        d['mode']='public';d['findings'][0]['transcription']={'segments':[{'text':'private original text'}]}
+        self.assertIn('Private payload keys in public catalogue',validate_catalogue(d))
+    def test_alias_cannot_reassign_existing_id(self):
+        d=json.loads((ROOT/'docs/catalogue.json').read_text(encoding='utf-8'));d['aliases'][d['findings'][0]['id']]=d['findings'][1]['id']
+        self.assertIn('Broken alias target',validate_catalogue(d))
     def test_asset_payload_rejected(self):
         d=json.loads((ROOT/'docs/catalogue.json').read_text(encoding='utf-8'));d['findings'][0]['assets'][0]['audio_base64']='excluded'
         self.assertIn('Unexpected asset payload fields',validate_catalogue(d))

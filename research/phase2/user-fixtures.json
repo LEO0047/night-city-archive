@@ -1,0 +1,250 @@
+{
+  "schema": "nca.acceptance.fixtures/v2",
+  "received_date": "2026-10-26",
+  "scope": "Independent user-supplied holdout; never imported by discovery or scoring",
+  "source": "https://cyberpunk.fandom.com/wiki/Category:Cyberpunk_2077_Cut_Content",
+  "source_license": "CC-BY-SA per category footer; underlying game text not reproduced",
+  "qualifications": [
+    "baseid is not guaranteed to be the full TweakDB name",
+    "console-only is a community claim, not an observed fact",
+    "Unresolved discrepancies must not be arbitrarily assigned to wiki error or version difference"
+  ],
+  "fixtures": [
+    {
+      "fixture_id": "USER-A-01",
+      "category": "服裝",
+      "baseid": "mq017_SameraiJacket",
+      "name": "Fake SEMURAI jacket",
+      "expected": "unobtainable_community_claim",
+      "provenance": "user_supplied_community_fixture",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-A-02",
+      "category": "服裝",
+      "baseid": "SQ021_Wraiths_Vest",
+      "name": "BAD MOTHERFUCKER vest",
+      "expected": "unobtainable_community_claim",
+      "provenance": "user_supplied_community_fixture",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-A-03",
+      "category": "服裝",
+      "baseid": "SQ021_Lab_Costume",
+      "name": "Kang Tao lab suit",
+      "expected": "unobtainable_community_claim",
+      "provenance": "user_supplied_community_fixture",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-A-04",
+      "category": "服裝",
+      "baseid": "SQ012_Shirt_VoteForPeralez",
+      "name": "Peralez campaign shirt",
+      "expected": "unobtainable_community_claim",
+      "provenance": "user_supplied_community_fixture",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-A-05",
+      "category": "服裝",
+      "baseid": "Q115_Custom_Predator_Boots",
+      "name": "Predator exo-jacks (from Rogue)",
+      "expected": "unobtainable_community_claim",
+      "provenance": "user_supplied_community_fixture",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-A-06",
+      "category": "武器與改裝",
+      "baseid": "SimpleWeaponMod16",
+      "name": "Autoloader",
+      "expected": "unobtainable_community_claim",
+      "provenance": "user_supplied_community_fixture",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-A-07",
+      "category": "武器與改裝",
+      "baseid": "sq018_jackie_machete",
+      "name": "Jackie's Machete",
+      "expected": "unobtainable_community_claim",
+      "provenance": "user_supplied_community_fixture",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-A-08",
+      "category": "其他道具",
+      "baseid": "q105_braindance_foreign_body",
+      "name": "BD: Foreign Body",
+      "expected": "unobtainable_community_claim",
+      "provenance": "user_supplied_community_fixture",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-A-09",
+      "category": "其他道具",
+      "baseid": "q105_braindance_sassquatch",
+      "name": "BD: sASSquatch",
+      "expected": "unobtainable_community_claim",
+      "provenance": "user_supplied_community_fixture",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-A-10",
+      "category": "文件與 shard",
+      "baseid": "generic_q115_afterlife_weapon_dealer",
+      "name": "Sora-II",
+      "expected": "unobtainable_community_claim",
+      "provenance": "user_supplied_community_fixture",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-A-11",
+      "category": "文件與 shard",
+      "baseid": "generic_q112_warehouse_roster",
+      "name": "Vehicle Inventory",
+      "expected": "unobtainable_community_claim",
+      "provenance": "user_supplied_community_fixture",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-A-12",
+      "category": "文件與 shard",
+      "baseid": "q110_equipment_requisition_list",
+      "name": "NetWatch: Operation Eternal",
+      "expected": "unobtainable_community_claim",
+      "provenance": "user_supplied_community_fixture",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-A-13",
+      "category": "文件與 shard",
+      "baseid": "q306_blackops_orders",
+      "name": "CLASSIFIED/To do/Priority P0",
+      "expected": "unobtainable_community_claim",
+      "provenance": "user_supplied_community_fixture",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-A-14",
+      "category": "文件與 shard",
+      "baseid": "mq304_bennett_dossier_shard",
+      "name": "Dossier on Chester Bennett",
+      "expected": "unobtainable_community_claim",
+      "provenance": "user_supplied_community_fixture",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-A-15",
+      "category": "文件與 shard",
+      "baseid": "ep1_generic_cormac_shard",
+      "name": "ARTHUR CORMAC CORMAC",
+      "expected": "unobtainable_community_claim",
+      "provenance": "user_supplied_community_fixture",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-A-16",
+      "category": "文件與 shard",
+      "baseid": "sts_cct_cpz_01_shard_003",
+      "name": "Get him talking",
+      "expected": "unobtainable_community_claim",
+      "provenance": "user_supplied_community_fixture",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-A-17",
+      "category": "對話紀錄",
+      "baseid": "sts_wat_kab_101_onscreen_001",
+      "name": "Archived Conversation example: Kabuki",
+      "expected": "unobtainable_community_claim",
+      "provenance": "user_supplied_community_fixture",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-A-18",
+      "category": "對話紀錄",
+      "baseid": "ma_bls_ina_se5_14_onscreen_01",
+      "name": "Archived Conversation example: Badlands",
+      "expected": "unobtainable_community_claim",
+      "provenance": "user_supplied_community_fixture",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-B-01",
+      "name": "Tabula e-Rasa",
+      "expected": "report_current_residue",
+      "reported_change": "1.3 removal; menu reset replacement",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-B-02",
+      "name": "Trajectory Generator",
+      "expected": "report_current_residue",
+      "reported_change": "1.5 rework",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-C-01",
+      "baseid": "sts_std_arr_06",
+      "name": "Gig: Nasty Hangover",
+      "expected": "must_not_be_cut",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-C-02",
+      "baseid": "sts_wat_kab_01",
+      "name": "Gig: Concrete Cage Trap",
+      "expected": "must_not_be_cut",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-C-03",
+      "baseid": "sts_std_arr_12",
+      "name": "Gig: Desperate Measures",
+      "expected": "must_not_be_cut",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-C-04",
+      "baseid": "NCART",
+      "name": "NCART metro",
+      "expected": "must_not_be_cut",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-C-05",
+      "baseid": "q000",
+      "name": "Q000 Nomad",
+      "expected": "must_not_be_cut",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-C-06",
+      "baseid": "mq008",
+      "name": "MQ008 shooting contest",
+      "expected": "must_not_be_cut",
+      "rule_input": false
+    },
+    {
+      "fixture_id": "USER-C-07",
+      "baseid": "mq301",
+      "name": "EP1 MQ301",
+      "expected": "must_not_be_cut",
+      "rule_input": false
+    }
+  ],
+  "vehicle_lead": {
+    "name": "NCPD Night Hunter",
+    "reported_mod_date": "2026-04",
+    "record_name_verified": false,
+    "expected": null,
+    "use": "independent follow-up only"
+  },
+  "tcrf": {
+    "status": "not_read",
+    "reason": "user reports robot verification; no bypass attempted"
+  }
+}

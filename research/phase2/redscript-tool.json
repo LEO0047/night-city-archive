@@ -1,0 +1,9 @@
+{
+  "version": "v0.5.32",
+  "url": "https://github.com/jac3km4/redscript/releases/download/v0.5.32/redscript-cli.exe",
+  "bytes": 1859584,
+  "sha256": "c8665c40199fb784a78b980db3a304a7f0b14a9494b3b59a125ff5618bf13f6c",
+  "release_digest": "sha256:c8665c40199fb784a78b980db3a304a7f0b14a9494b3b59a125ff5618bf13f6c",
+  "license": "MIT",
+  "installed_into_game": false
+}
